@@ -23,9 +23,9 @@ trap cleanup_ERR ERR
 
 main() {
 (
-  pcre2grep -M -o1 '^(SQLITE_API[^;{]*) *{' "./sqlite/build/sqlite3.c"
+  pcre2grep -M '^ *([a-zA-Z][a-zA-Z_0-9 ]+ \**)([a-zA-Z][a-zA-Z_0-9]* )?(sqlite3[_a-zA-Z0-9]+)(\([^;{]*);' "./sqlite/build/sqlite3.c"
   return 0
-) >sqlite3.c.bod.API
+) >sqlite3.c.sig.APIn.txt
 }
 
 
