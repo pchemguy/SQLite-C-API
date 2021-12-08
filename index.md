@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Notes
-nav_order: 100
-permalink: /notes
+nav_order: 1
+permalink: /
 ---
 
 I am exploring SQLite C-language API and am using this page for now for notes taking.
